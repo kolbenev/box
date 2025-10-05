@@ -1,0 +1,27 @@
+.container {
+    width: min(100% - 24px, var(--container));
+    margin-inline: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.btn--primary {
+    background: var(--red);
+    color: var(--white);
+}
+
+.btn--primary:hover {
+    background: var(--red-2);
+}
+
+.btn--ghost {
+    border: 1px solid #fff2;
+    color: var(--white);
+}

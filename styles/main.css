@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;600&display=swap');
+@import "utils.css";
+@import "header.css";
+@import "hero.css";
+@import "about.css";
+@import "coach.css";
+@import "formats.css";
+@import "contacts.css";
+@import "footer.css";
+
+:root {
+    --red: #C21717;
+    --red-2: #E12524;
+    --bg: #0B0B0C;
+    --text: #F5F5F5;
+    --muted: #B8B8B8;
+    --white: #FFFFFF;
+    --radius: 16px;
+    --shadow: 0 10px 30px rgba(0, 0, 0, .35);
+    --container: 1200px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}

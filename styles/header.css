@@ -1,0 +1,43 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(6px);
+    background: rgba(11, 11, 12, 0.85);
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.nav {
+    display: none;
+    gap: 20px;
+}
+
+.nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    opacity: .9;
+}
+
+.nav a:hover {
+    opacity: 1;
+}
+
+@media (min-width: 800px) {
+    .nav {
+        display: flex;
+    }
+}

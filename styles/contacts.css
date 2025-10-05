@@ -1,0 +1,52 @@
+.contacts {
+    background: #0B0B0C;
+    padding: clamp(48px, 8vw, 96px) 0;
+}
+
+.contacts__inner {
+    display: grid;
+    gap: 32px;
+    align-items: center;
+}
+
+.contacts__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(28px, 4vw, 48px);
+    color: var(--red-2);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.contacts__info p {
+    color: var(--muted);
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contacts__phone a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contacts__phone a:hover {
+    color: var(--red-2);
+}
+
+.contacts__map {
+    width: 100%;
+    height: 320px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+@media (min-width: 900px) {
+    .contacts__inner {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contacts__map {
+        height: 400px;
+    }
+}
